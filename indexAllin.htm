@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+* {
+margin: 0 0 0 0;
+font-family: raleway;
+}
+
+.menubox, .contentbox {
+height: 80vh;
+width: 40vw;
+margin-top: 10vh;
+}
+
+.contentbox {
+float: right;
+background-color: orange;
+margin-right: 5vw;
+overflow: scroll;
+}
+
+.menubox {
+display: flex;
+float: left;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+
+.menubox p {
+color: gray;
+font-size: 10vh;
+}
+
+.menubox p:hover {
+color: orange;
+background-color: black;
+}
+
+.title {
+color: white;
+font-size: 10vh;
+}
+
+.cont {
+margin-left: 2.5vw;
+font-size: 5vh;
+}
+
+.behind {
+position: absolute;
+}
+
+.behind img {
+height: 10vh;
+padding-right: 2vw;
+}
+
+.namer {
+font-size: 5vh;
+}
+
+.im {
+max-width: 30vw;
+}
+
+</style>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet"> 
+</head>
+<body>
+
+<div class="behind">
+<p class="namer">Crafter Kingston/Crafter Bob</p>
+<img src="https://yt3.ggpht.com/7Ca8G2n4aclWsqMgXKUVB0Icke89-Be6n4U681J5zJBDJepXeN0PAa5Iz7cZxBNfR7wbJKy1=s176-c-k-c0x00ffffff-no-rj-mo" onclick="window.open('https://www.youtube.com/channel/UC7qWK8c73CiXkBdFb723U4Q')">
+<img src="https://yt3.ggpht.com/YN2bGna03FYdQXdHsvrGp1t7tGpIYEktCWH1-fFj2w05xUEKLM_AK1VD4Anqe9ONyH8jW6icAw=s88-c-k-c0x00ffffff-no-rj" onclick="window.open('https://www.youtube.com/c/CrafterBob2021/featured')">
+</div>
+
+<div class="menubox">
+<p onclick="pagina(0)">Welkom!</p>
+<p onclick="pagina(1)">Twee kanalen?</p>
+<p onclick="pagina(2)">Quizvraag</p>
+<p onclick="pagina(3)">Over me</p>
+</div>
+
+
+<div class="contentbox">
+<p class="title"></p>
+<p class="cont"></p>
+<img src="" class="im">
+</div>
+
+<script>
+let contents = [
+["Welkom op mijn site!", "Ik ben Bob! Ik speel graag de spellen: Brawl Stars, Clash Royale en andere Supercell games! Video's waarin ik die games speel, kun je dus ook verwachten op dit kanaal! In 2020 uploadde ik een viral video:https://youtu.be/I8D0gurVNK0. Gaan we op die video de 20.000 weergaven halen?"],
+
+["Waarom heb ik twee kanalen?", "Omdat ik dat gewoon super leuk vind. Op die manier krijg je natuurlijk ook dubbele inkomsten!"],
+
+["Er is nog geen quizvraag!", "Jammer toch? Binnenkort komt hij zekersteweten!", "https://i.ytimg.com/vi/v5EauUmo5cI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7HqkrPmvykIjSGt03Dp1mCt63BQ"],
+
+["Over...", "Hoi. Ik ben CB of CK, en ik vind sommige spellen heel erg leuk. Bijvoorbeeld mc, of klepperdiemee. Of Brawl Stars. Dus vind jij die spellen ook leuk? Vraag me er dan alles over, dan delen wij de gekke interesse!", "https://www.mediacourant.nl/wp-content/uploads/2020/11/1128-Martien-Meiland.jpg"],
+
+["Welkom op de site!", "Houd je nu al van deze website? Kom snel mee, dan laat ik je alles zien!", "https://bit.ly/31VnUpW"],
+
+];
+
+
+const title = document.querySelector(".title");
+const cont = document.querySelector(".cont");
+const im = document.querySelector(".im");
+
+function pagina(nr) {
+im.style.display = "block";
+
+title.textContent = contents[nr][0];
+cont.textContent = contents[nr][1];
+im.setAttribute("src", contents[nr][2]);
+
+if (contents[nr][2] == undefined) {
+im.style.display = "none";
+}
+
+}
+
+window.onload = pagina(4);
+
+</script>
+</body>
+</html>
+
+
+
