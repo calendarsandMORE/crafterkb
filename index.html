@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet"> 
 <style>
 * {
 margin: 0 0 0 0;
@@ -66,8 +68,6 @@ max-width: 30vw;
 }
 
 </style>
-<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet"> 
-<link href="https://fonts.googleapis.com/css2?family=Bakbak+One&display=swap" rel="stylesheet"> 
 </head>
 <body>
 
@@ -99,7 +99,7 @@ let contents = [
 
 ["Er is nog geen quizvraag!", "Jammer toch? Binnenkort komt hij zekersteweten!", "https://i.ytimg.com/vi/v5EauUmo5cI/hq720.jpg?sqp=-oaymwEcCOgCEMoBSFXyq4qpAw4IARUAAIhCGAFwAcABBg==&rs=AOn4CLA7HqkrPmvykIjSGt03Dp1mCt63BQ"],
 
-["Over...", "Hoi. Ik ben CB of CK, en ik vind sommige spellen heel erg leuk. Bijvoorbeeld mc, of klepperdiemee. Of Brawl Stars. Dus vind jij die spellen ook leuk? Vraag me er dan alles over, dan delen wij de gekke interesse!"],
+["Over...", "Hoi. Ik ben CB of CK, en ik vind sommige spellen heel erg leuk. Bijvoorbeeld mc, of klepperdiemee. Of Brawl Stars. Dus vind jij die spellen ook leuk? Vraag me er dan alles over, dan delen wij de gekke interesse!", "https://www.mediacourant.nl/wp-content/uploads/2020/11/1128-Martien-Meiland.jpg"],
 
 ["Welkom op de site!", "Houd je nu al van deze website? Kom snel mee, dan laat ik je alles zien!", "https://bit.ly/31VnUpW"],
 
@@ -124,6 +124,35 @@ im.style.display = "none";
 }
 
 window.onload = pagina(4);
+
+
+
+
+window.onload = checkDeviceWidth();
+
+function checkDeviceWidth() {
+if (window.innerWidth < 600) {
+
+const menubox = document.querySelector(".menubox");
+const contentbox = document.querySelector(".contentbox");
+
+menubox.style.height = "50vh";
+contentbox.style.height = "50vh";
+menubox.style.width = "100vw";
+contentbox.style.width ="100vw";
+menubox.style.marginTop = "2vh";
+contentbox.style.marginTop = "2vh";
+
+menubox.style.marginTop = "15vh";
+contentbox.style.marginTop = "5vh";
+contentbox.style.width = "80vw";
+contentbox.style.marginRight = "10vw";
+
+}
+}
+
+
+
 
 </script>
 </body>
