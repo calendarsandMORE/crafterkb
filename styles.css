@@ -55,3 +55,19 @@ background-color: yellow;
 .myinfo {
 font-size: 20px;
 }
+
+.fotooverlay {
+height: 100vh;
+width: 100vw;
+background-color: rgba(0,0,0,0.6);
+position: fixed;
+display: none;
+justify-content: center;
+}
+
+.fotooverlay img {
+margin-top: 50px;
+height: 500px;
+}
+
+
