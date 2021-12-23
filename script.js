@@ -16,3 +16,11 @@ let hoi = d2 - d1;
 let aantaluurvoorkerst = Math.round(hoi/3600000);
 document.querySelector(".kerstaanduiding").textContent = aantaluurvoorkerst;
 
+function veranderkerstboom(wat) {
+let img = document.querySelector(".kerstboomaanuit");
+img.setAttribute("src", "kerstboom/lichtjes" + wat + ".png");
+}
+
+
+
+
