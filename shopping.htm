@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="sneeuwoverlay">
+</div>
+
+<div class="fotooverlay" onclick="goaway()">
+<img src="merchh/m1.png" class="fotooverlayFOTO">
+</div>
+
+
+
+<a href="index.htm"><img src="logokerst.png" class="logo"></a>
+
+<div class="menu">
+<a href="index.htm">Home</a>
+<a href="about.htm">About</a>
+<a href="shopping.htm">Merch</a>
+</div>
+
+<h1>Buy YOUR Merch</h1>
+
+<p class="myinfo">Welcome to my shop. Especially for you, we've created a merchandise-line. Community-relevant!
+<span style="color: red;">Do you have LOVE or </span><span style="color: gold">LOVE Gold?</span> You will have a huge sale!</p>
+
+<br>
+<img src="merchh/m4.png" style="width: 600px" onclick="showfoto(4)">
+<p style="float:right; margin-right: 300px; font-size: 40px;">T-shirt ''All is CK"<br>
+<span style="font-size: 30px">&#8364;27,-</span><br>
+<span style="background-color: black; font-size: 25px; color: red">With Community LOVE: &#8364;21,-</span><br>
+<span style="background-color: black;font-size: 25px; color: gold">With Community LOVE Gold: &#8364;15,-</span>
+</p>
+
+<br><br>
+<img src="merchh/m1.png" style="width: 600px" onclick="showfoto(1)">
+<p style="float:right; margin-right: 300px; font-size: 40px;">T-shirt ''CK paars"<br>
+<span style="font-size: 30px">&#8364;25,-</span><br>
+<span style="background-color: black; font-size: 25px; color: red">With Community LOVE: &#8364;20,-</span><br>
+<span style="background-color: black;font-size: 25px; color: gold">With Community LOVE Gold: &#8364;15,-</span>
+</p>
+
+<br><br>
+<img src="merchh/m2.png" style="width: 600px" onclick="showfoto(2)">
+<p style="float:right; margin-right: 300px; font-size: 40px;">T-shirt ''CK paars"<br>
+<span style="font-size: 30px">&#8364;25,-</span><br>
+<span style="background-color: black; font-size: 25px; color: red">With Community LOVE: &#8364;20,-</span><br>
+<span style="background-color: black;font-size: 25px; color: gold">With Community LOVE Gold: &#8364;15,-</span>
+</p>
+
+<br><br>
+<img src="merchh/m3.png" style="width: 600px" onclick="showfoto(3)">
+<p style="float:right; margin-right: 300px; font-size: 40px;">T-shirt ''CK paars"<br>
+<span style="font-size: 30px">&#8364;25,-</span><br>
+<span style="background-color: black; font-size: 25px; color: red">With Community LOVE: &#8364;20,-</span><br>
+<span style="background-color: black;font-size: 25px; color: gold">With Community LOVE Gold: &#8364;15,-</span>
+</p>
+
+<script>
+function goaway() {
+document.querySelector(".fotooverlay").style.display = "none";
+}
+function showfoto(nr) {
+let addf = document.querySelector(".fotooverlayFOTO");
+addf.setAttribute("src", "merchh/m" + nr + ".png");
+document.querySelector(".fotooverlay").style.display = "flex";
+}
+</script>
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
