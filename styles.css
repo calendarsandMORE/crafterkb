@@ -1,0 +1,57 @@
+h1 {
+width: 30px;
+font-family: verdana;
+background: rgb(2,0,36);
+background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(255,190,68,1) 35%, rgba(0,212,255,1) 100%); 
+}
+
+.logo {
+height: 250px;
+}
+
+.subscr {
+color: red; 
+width: 200px;
+}
+
+.price1, .price2 {
+font-size: 30px;
+margin: -10px 0px -10px 0px;
+}
+
+.kerstaanduiding {
+text-align: center;
+color: white;
+font-size: 60px;
+margin: 0;
+}
+
+.kerstdef {
+text-align: center;
+color: red;
+font-size: 20px;
+margin: 0;
+}
+
+.sneeuwoverlay {
+/*display: none;*/
+z-index: -1;
+opacity: 0.2;
+position: fixed;
+width: 100vw;
+height: 100vh;
+background-image: url("sneeuw.gif");
+}
+
+.menu a {
+font-size: 30px;
+border: 5px solid yellow;
+}
+
+.menu a:hover {
+background-color: yellow;
+}
+
+.myinfo {
+font-size: 20px;
+}
