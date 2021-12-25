@@ -1,4 +1,4 @@
-window.onload = attentie;
+window.onload = attentie();
 
 function attentie() {
 let img = document.querySelector(".attentie");
