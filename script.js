@@ -1,6 +1,6 @@
 //sneeuw
 let sneeuwnu = new Date();
-let sneeuwd1 = new Date(2021, 11, 25, 17)
+let sneeuwd1 = new Date(2021, 11, 25, 18)
 let sneeuwd2 = new Date(2021, 11, 25, 20)
 
 if (sneeuwnu > sneeuwd1 && sneeuwnu < sneeuwd2) {
