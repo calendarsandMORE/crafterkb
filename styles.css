@@ -70,3 +70,13 @@ margin-top: 50px;
 height: 500px;
 }
 
+.attentie {
+transition: 2s;
+border-radius: 20px;
+height: 100px;
+z-index: 2;
+position: absolute;
+margin-left: 400px;
+margin-top: -200px;
+}
+
