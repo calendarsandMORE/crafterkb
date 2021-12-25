@@ -1,3 +1,15 @@
+//sneeuw
+let sneeuwnu = new Date();
+let sneeuwd1 = new Date(2021, 11, 25, 18)
+let sneeuwd2 = new Date(2021, 11, 25, 20)
+
+if (sneeuwnu > sneeuwd1 && sneeuwnu < sneeuwd2) {
+document.querySelector(".sneeuwoverlay").style.display = "none";
+}  else {
+document.querySelector(".sneeuwoverlay").style.display = "default";
+}
+//sneeuwsluit
+
 let inp = document.querySelector(".inp");
 let price1 = document.querySelector(".price1");
 let price2 = document.querySelector(".price2");
