@@ -23,7 +23,7 @@ price2.textContent = '\u20AC' + (inp.value * 5.75).toFixed(2) + ",-";
 
 
 let d1 = new Date();
-let d2 = new Date(2021, 11, 27);
+let d2 = new Date(2022, 0, 1);
 let hoi = d2 - d1;
 let aantaluurvoorkerst = Math.round(hoi/3600000);
 document.querySelector(".kerstaanduiding").textContent = aantaluurvoorkerst;
