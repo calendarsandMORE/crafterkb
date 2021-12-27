@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+p {
+  font-family: Karla;
+}
+
+
 h1 {
 width: 30px;
 font-family: verdana;
@@ -79,12 +86,3 @@ position: absolute;
 margin-left: 400px;
 margin-top: -200px;
 }
-
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
-
-p {
-  font-family: Karla;
-}
-
-
-
