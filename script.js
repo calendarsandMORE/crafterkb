@@ -10,6 +10,7 @@ document.querySelector(".sneeuwoverlay").style.display = "default";
 }
 //sneeuwsluit
 
+
 let inp = document.querySelector(".inp");
 let price1 = document.querySelector(".price1");
 let price2 = document.querySelector(".price2");
@@ -26,15 +27,36 @@ let d1 = new Date();
 let d2 = new Date(2022, 0, 1);
 let hoi = d2 - d1;
 let aantaluurvoorkerst = Math.round(hoi/3600000);
-document.querySelector(".kerstaanduiding").textContent = aantaluurvoorkerst;
+
+let aantaldagen = String(aantaluurvoorkerst/24);
+let splitted = aantaldagen.split("");
+let punt = splitted.indexOf(".");
+let cijfersVoorPunt = "";//		//
+for (let i = 0; i < punt; i++) {
+cijfersVoorPunt += splitted[i]
+}
+//alert(cijfersVoorPunt);//		//
+let cijfersNaPunt = "";//		//
+for (let i = punt + 1; i < splitted.length; i++) {
+cijfersNaPunt += splitted[i];
+}
+//alert(cijfersNaPunt);//		//
+let uur = Number(cijfersNaPunt);
+let macht = splitted.length - punt - 1;
+let keermacht = Math.pow(10, -macht);
+uur *= keermacht;
+uur *= 24;
+let uur2 = Math.round(uur);
+
+document.getElementById("KERSTdays").textContent = cijfersVoorPunt;
+document.getElementById("KERSThours").textContent = uur2;
+
+//document.querySelector(".kerstaanduiding").textContent = aantaluurvoorkerst;
+
 
 function veranderkerstboom(wat) {
 let img = document.querySelector(".kerstboomaanuit");
 img.setAttribute("src", "kerstboom/lichtjes" + wat + ".png");
 }
-
-
-
-
 
 
