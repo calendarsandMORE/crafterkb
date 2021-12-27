@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
+
+p, a, label, input {
+font-family: Karla;
+}
+
 h1 {
 width: 30px;
 font-family: verdana;
