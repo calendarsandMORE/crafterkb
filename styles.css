@@ -1,9 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@300&display=swap');
 
-p {
-font-family: Karla;
-}
-a {
+p, input, a, label {
 font-family: Karla;
 }
 
