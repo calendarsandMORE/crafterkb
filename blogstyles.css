@@ -25,6 +25,11 @@ max-height: 1000px;
 font-size: 40px;
 }
 
+.top .datumge {
+font-size: 13px;
+font-style: italic;
+}
+
 .top .voorinformatie {
 font-weight: bold;
 }
@@ -33,6 +38,7 @@ font-weight: bold;
 color: green;
 text-decoration: underline;
 }
+
 
 
 
