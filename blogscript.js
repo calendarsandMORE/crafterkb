@@ -31,8 +31,8 @@ titel.textContent = blogs[a][0];
 top.appendChild(titel);
 
 let datumge = document.createElement("p");
+datumge.innerHTML = "<span><img src='klokje.jpg' style='height: 25px; margin-bottom: -7px;'></span>" + blogs[a][3];
 datumge.setAttribute("class", "datumge");
-datumge.textContent = blogs[a][3];
 top.appendChild(datumge);
 
 let voorinformatie = document.createElement("p");
