@@ -1,7 +1,7 @@
 //sneeuw
 let sneeuwnu = new Date();
-let sneeuwd1 = new Date(2021, 11, 27, 18)
-let sneeuwd2 = new Date(2021, 11, 27, 20)
+let sneeuwd1 = new Date(2021, 11, 31, 18)
+let sneeuwd2 = new Date(2021, 11, 31, 20)
 
 if (sneeuwnu > sneeuwd1 && sneeuwnu < sneeuwd2) {
 document.querySelector(".sneeuwoverlay").style.display = "none";
@@ -9,6 +9,21 @@ document.querySelector(".sneeuwoverlay").style.display = "none";
 document.querySelector(".sneeuwoverlay").style.display = "default";
 }
 //sneeuwsluit
+
+//nieuwjaar
+let nieuwjaard1 = new Date(2021, 11, 31, 14, 33);
+let nieuwjaard2 = new Date(2021, 11, 31, 14, 34);
+if (sneeuwnu > nieuwjaard1 && sneeuwnu < nieuwjaard2) {
+document.querySelector(".nieuwjaaroverlay").style.display = "block";
+}
+
+document.querySelector(".nieuwjaaroverlayurenminuten").textContent = "We are allready " + sneeuwnu.getHours() + " hours and " + sneeuwnu.getMinutes() + " minutes into 2022!"
+document.querySelector(".nieuwjaaroverlay").addEventListener("click", function() {
+document.querySelector(".nieuwjaaroverlay").style.display = "none";
+}, false);
+
+//nieuwjaarsluit
+
 
 
 let inp = document.querySelector(".inp");
