@@ -64,6 +64,10 @@ title.innerHTML = "CK - " + menuitems[i][0];
 }
 }
 
+if (path == "https://crafterkb.github.io/home/") {
+alert("dd");
+}
+
 head.appendChild(title);
 
 }
