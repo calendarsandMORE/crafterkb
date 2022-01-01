@@ -3,6 +3,7 @@ window.onload = doEverything;
 function doEverything() {
 laadmenu();
 laadfooter();
+laadtitle();
 }
 
 let menuitems = [
@@ -48,4 +49,23 @@ footer.appendChild(a);
 
 body.appendChild(footer);
 }
+
+function laadtitle() {
+let head = document.querySelector("head");
+let title = document.createElement("title");
+
+let path = window.location.pathname;
+let page = path.split("/").pop();
+let pagerhtm = page.substring(0, page.length - 4)
+
+for (let i = 0; i < menuitems.length; i++) {
+if (menuitems[i][1] == pagerhtm) {
+title.innerHTML = "CK - " + menuitems[i][0];
+}
+}
+
+head.appendChild(title);
+
+}
+
 
