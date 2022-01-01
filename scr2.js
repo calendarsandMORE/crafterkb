@@ -65,7 +65,7 @@ title.innerHTML = "CK - " + menuitems[i][0];
 }
 
 if (path == "/home/") {
-alert("dd");
+title.innerHTML = "CK - Home"
 }
 
 head.appendChild(title);
